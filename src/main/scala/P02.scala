@@ -9,8 +9,8 @@ object P02 {
 
   def penultimateRecursive[A](list: List[A]): A = list match {
     case h::_::Nil => h
-    case _::tail => penultimateRecursive(tail)
-    case _ => throw new NoSuchElementException
+    case _::tail   => penultimateRecursive(tail)
+    case _         => throw new NoSuchElementException
   }
 
   def main(args: Array[String]): Unit = {
@@ -18,4 +18,5 @@ object P02 {
     println(penultimate(list))
     println(penultimateRecursive(list))
   }
+
 }

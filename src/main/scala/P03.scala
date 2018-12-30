@@ -1,4 +1,5 @@
 object P03 {
+
   def nth[A](index: Int, list: List[A]): A = {
     if (list.size-1 < index) {
       throw new IndexOutOfBoundsException
@@ -8,7 +9,7 @@ object P03 {
 
   def nth2[A](index: Int, list: List[A]): A = list match {
     case _ if list.size-1 > index => list(index)
-    case _ => throw new IndexOutOfBoundsException
+    case _                        => throw new IndexOutOfBoundsException
   }
 
   def main(args: Array[String]): Unit = {
@@ -16,4 +17,5 @@ object P03 {
     println(nth(2, list))
     println(nth2(2, list))
   }
+
 }

@@ -1,4 +1,5 @@
 object P04 {
+
   def length[A](list: List[A]): Int = list.length
 
   def lengthRecursive[A](list: List[A]): Int = list match {
@@ -11,4 +12,5 @@ object P04 {
     println(length(list))
     println(lengthRecursive(list))
   }
+
 }
